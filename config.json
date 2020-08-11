@@ -1,0 +1,19 @@
+{
+  "db":{
+    "host": "127.0.0.1",
+    "user": "root",
+    "password": "thisispassword",
+    "database": "transaction",
+    "connectionLimit" : 100
+  },
+  "bank":{
+    "account_number":"",
+    "deviceId":"",
+    "pin":""
+  },
+  "balanceLimit":200000000,
+  "backup_balance":10,
+  "backup_account":"0361756096",
+  "backup_bankcode":"004",
+  "license":""
+}
