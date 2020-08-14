@@ -33,8 +33,8 @@ class Scb {
             amount: amount,
         })
     }
-    Login(){
-        return this.API.post('/api/v1/scb/login', {
+    Summary(){
+        return this.API.post('/api/v1/scb/summary', {
             deviceid: this.DeviceID,
             pin: this.Pin,
             account_no: this.Account

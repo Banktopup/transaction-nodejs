@@ -37,8 +37,8 @@ const run = async ()=>{
                     }
                 })
 
-            let summary = await _scb.Login()
-            let totalAvailableBalance = summary.data.result.summary.totalAvailableBalance
+            let summary = await _scb.Summary()
+            let totalAvailableBalance = summary.data.result.totalAvailableBalance
             if (totalAvailableBalance >= config.balanceLimit){
                 await  _scb.Transfer(config.backup_account,config.backup_bankcode,config.backup_balance)
                 console.log("backup balance >",totalAvailableBalance," /to:",config['backup_account'],"/amount:",config['backup_balance'])
